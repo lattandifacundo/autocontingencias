@@ -1,6 +1,5 @@
 from PIL import Image
-import ssl
-import urllib.request
+import ssl, urllib.request, os
 
 def update(url):
     ssl._create_default_https_context = ssl._create_unverified_context
@@ -20,3 +19,5 @@ def update(url):
     img = Image.open('sur.png')
     cImg = img.crop((1, 55, 755, 734))
     cImg.save("sur.png")
+
+    os.remove("sur.gif")
