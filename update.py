@@ -2,13 +2,17 @@ from PIL import Image
 import ssl, urllib.request, os
 
 def update(url):
-    ssl._create_default_https_context = ssl._create_unverified_context
-    image = "sur.gif"
+    try:
+        ssl._create_default_https_context = ssl._create_unverified_context
+        image = "sur.gif"
 
-    r = urllib.request.urlopen(url)
-    f = open(image, "wb")
-    f.write(r.read())
-    f.close()
+        r = urllib.request.urlopen(url)
+        f = open(image, "wb")
+        f.write(r.read())
+        f.close()
+    except:
+        print("❌ Error al descargar la imagen")
+        exit(0)
 
     # From GIF palette to RGB formated PNG
     img = Image.open('sur.gif')

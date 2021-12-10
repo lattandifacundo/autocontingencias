@@ -17,9 +17,10 @@ def sendPost(text, imagesPaths, needNotification):
                 images.append(InputMediaPhoto(open(x, 'rb')))
     except x:
         print("❌ Ha ocurrido un error al leer las imagenes"+ str(x) +"\nfrom telegram.py")
-        return False
+        exit(1)
 
     try:
         bot.send_media_group(CHANNEL_ID, images, disable_notification= not needNotification)
     except:
         print("❌ Ha ocurrido un error al enviar el mensaje+\nfrom telegram.py")
+        exit(1)
