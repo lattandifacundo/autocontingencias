@@ -8,42 +8,34 @@ def scan(imagePath):
 
     imgW, imgH = img.size
 
-    countLl = 0; countG = 0
+    countG = 0
     for i in range(imgW):
         for j in range(imgH):
             v = scale.compute(pixels[i, j])
             if v != -1:
-                if v == 0:
-                    countLl+=0.5
-                elif v == 1:
-                    countLl+=1
-                elif v == 2:
-                    countLl+=2
-                elif v == 3:
+                if v == 3 or v == 4:
                     countG+=1
-                elif v == 4:
-                    countG+=2
 
-    print("Probabilidades de granizo (px):", countG, percentage.percentage(countG), "%")
-    print("Probabilidades de lluvia (px): ", countLl , percentage.percentage(countLl), "%")
-
-    Llpercentage = percentage.percentage(countLl)
-    Gpercentage = percentage.percentage(countG)
-    if Gpercentage >= 2.5:
-        print("Granizo!, Sending report")
+    percentageG = percentage.percentage(countG)
+    print("⛈ Granizo detectado:\n\t" + str(countG) + "px\n\t" + str(percentageG) + "%")
+    
+    if percentageG >= 3:
+        print("🔴 Red alert!, Sending report")
         import telegram
         telegram.sendPost(
-            text="<b>⛈ Granizará</b>\n<code>"+str(Gpercentage)+"%</code>",
-            imagesPaths=['docs/src/granizo.png', 'sur.png'],
+            text="⛈ Se ha detectado <b>granizo</b> en las nubes\n<code>"+str(countG) + "px\n" + str(percentageG) + "%</code>",
+            imagesPaths=['sur.png'],
+            # imagesPaths=['docs/src/redGranizo.png', 'sur.png'],
             needNotification=True
         )
-    elif Llpercentage >= 20:
-        print("Lluvias!, Sending report")
+    elif percentageG >= 2:
+        print("🟡 Yellow alert!, Sending report")
         import telegram
         telegram.sendPost(
-            text="<b>🌧 Lloverá</b>\n<code>"+str(Llpercentage)+"%</code>",
-            imagesPaths=['docs/src/lluvia.png', 'sur.png'],
-            needNotification=False
+            text="⛈ Se ha detectado <b>granizo</b> en las nubes\n<code>"+str(countG) + "px\n" + str(percentageG) + "%</code>",
+            imagesPaths=['sur.png'],
+            # imagesPaths=['docs/src/yellowGranizo.png', 'sur.png'],
+            needNotification=True
         )
     else:
         print("✔ No report needed")

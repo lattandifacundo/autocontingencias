@@ -1,9 +1,9 @@
 '''
-    0 = formaciones de lluvia
-    1 = lluvias debiles en precipitación
-    2 = lluvias moderadas en precipitación
-    3 = formaciones de granizo y lluvias moderadas
-    4 = precipicación de granizo y lluvias graves
+    0 = A = Formaciones de lluvia
+    1 = B = Lluvias debiles en precipitación
+    2 = C = Lluvias moderadas en precipitación
+    3 = D = Formaciones de granizo, lluvias moderadas y posibles descargas atmosfericas
+    4 = E = Precipicación de granizo, lluvias graves y posibles descargas atmosfericas
 '''
 
 base = {
