@@ -1,8 +1,8 @@
 from PIL import Image
 import scale, percentage
 
-def scan():
-    img = Image.open('sur.png')
+def scan(imagePath):
+    img = Image.open(imagePath)
     pixels = img.load()
     # (r, g, b) = pixels[x, y]
 
@@ -24,12 +24,26 @@ def scan():
                 elif v == 4:
                     countG+=2
 
-    if percentage.percentage(countLl) >= 20:
-        #alerta lluvia
-        print("Lluvias!")
-    elif percentage.percentage(countG) >= 2.5:
-        #alerta granizo!
-        print("Granizo!!")
-                
     print("Probabilidades de granizo (px):", countG, percentage.percentage(countG), "%")
     print("Probabilidades de lluvia (px): ", countLl , percentage.percentage(countLl), "%")
+
+    Llpercentage = percentage.percentage(countLl)
+    Gpercentage = percentage.percentage(countG)
+    if Gpercentage >= 2.5:
+        print("Granizo!, Sending report")
+        import telegram
+        telegram.sendPost(
+            text="<b>⛈ Granizará</b>\n<code>"+str(Gpercentage)+"%</code>",
+            imagesPaths=['docs/src/granizo.png', 'sur.png'],
+            needNotification=True
+        )
+    elif Llpercentage >= 20:
+        print("Lluvias!, Sending report")
+        import telegram
+        telegram.sendPost(
+            text="<b>🌧 Lloverá</b>\n<code>"+str(Llpercentage)+"%</code>",
+            imagesPaths=['docs/src/lluvia.png', 'sur.png'],
+            needNotification=False
+        )
+    else:
+        print("✔ No report needed")
