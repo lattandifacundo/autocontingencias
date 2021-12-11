@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - main
+      
   schedule:
-    - cron:  '*/15 * * * *'
+    - cron: '00,15,30,45 * * * *'
 
 jobs:
   granizo:
