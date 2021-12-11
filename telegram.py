@@ -1,5 +1,5 @@
 import telebot, os, decouple
-from telebot.types import InputMediaPhoto
+from telebot.types import InputMediaAnimation, InputMediaPhoto, InputMediaVideo
 
 TOKEN = decouple.config('TOKEN')
 CHANNEL_ID = decouple.config('CHANNEL_ID')
@@ -9,18 +9,13 @@ bot = telebot.TeleBot(TOKEN)
 
 def sendPost(text, imagesPaths, needNotification):
     images = []
-    try:
-        for x in imagesPaths:
-            if x == imagesPaths[0]:
-                images.append(InputMediaPhoto(open(x, 'rb'), caption=text, parse_mode="HTML"))
+    for x in imagesPaths:
+        if x == imagesPaths[0]:
+            images.append(InputMediaPhoto(open(x, 'rb'), caption=text, parse_mode="HTML"))
+        else:
+            if x == 'animacion.mp4':
+                images.append(InputMediaVideo(open(x, 'rb')))
             else:
                 images.append(InputMediaPhoto(open(x, 'rb')))
-    except x:
-        print("❌ Ha ocurrido un error al leer las imagenes"+ str(x) +"\nfrom telegram.py")
-        exit(1)
 
-    try:
-        bot.send_media_group(CHANNEL_ID, images, disable_notification= not needNotification)
-    except:
-        print("❌ Ha ocurrido un error al enviar el mensaje+\nfrom telegram.py")
-        exit(1)
+    bot.send_media_group(CHANNEL_ID, images, disable_notification= not needNotification)

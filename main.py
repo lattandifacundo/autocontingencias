@@ -11,4 +11,6 @@ else:
     exit(1)
 
 scan.scan('sur.png')
-os.remove('sur.png')
+os.remove('sur.png'); os.remove("sur.gif")
+if os.path.isfile("animacion.gif"):
+    os.remove("animacion.gif"); os.remove("animacion.mp4")

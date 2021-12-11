@@ -21,20 +21,20 @@ def scan(imagePath):
     
     if percentageG >= 3:
         print("🔴 Red alert!, Sending report")
-        import telegram
+        import telegram, message, update
+        update.downloadAdditions()
         telegram.sendPost(
-            text="⛈ Se ha detectado <b>granizo</b> en las nubes\n<code>"+str(countG) + "px\n" + str(percentageG) + "%</code>",
-            imagesPaths=['sur.png'],
-            # imagesPaths=['docs/src/redGranizo.png', 'sur.png'],
+            text=message.template('red'),
+            imagesPaths=['docs/src/redAlert.webp', 'sur.gif', 'animacion.mp4'],
             needNotification=True
         )
     elif percentageG >= 2:
         print("🟡 Yellow alert!, Sending report")
-        import telegram
+        import telegram, message, update
+        update.downloadAdditions()
         telegram.sendPost(
-            text="⛈ Se ha detectado <b>granizo</b> en las nubes\n<code>"+str(countG) + "px\n" + str(percentageG) + "%</code>",
-            imagesPaths=['sur.png'],
-            # imagesPaths=['docs/src/yellowGranizo.png', 'sur.png'],
+            text=message.template('yellow'),
+            imagesPaths=['docs/src/yellowAlert.webp', 'sur.gif', 'animacion.mp4'],
             needNotification=True
         )
     else:
