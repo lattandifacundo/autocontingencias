@@ -19,7 +19,7 @@ def scan(imagePath):
     percentageG = percentage.percentage(countG)
     print("⛈ Granizo detectado:\n\t" + str(countG) + "px\n\t" + str(percentageG) + "%")
     
-    if percentageG >= 3:
+    if percentageG >= 4:
         print("🔴 Red alert!, Sending report")
         import telegram, message, update
         update.downloadAdditions()
@@ -28,7 +28,7 @@ def scan(imagePath):
             imagesPaths=['docs/src/redAlert.webp', 'sur.gif', 'animacion.mp4'],
             needNotification=True
         )
-    elif percentageG >= 2:
+    elif percentageG >= 3:
         print("🟡 Yellow alert!, Sending report")
         import telegram, message, update
         update.downloadAdditions()
@@ -36,6 +36,15 @@ def scan(imagePath):
             text=message.template('yellow'),
             imagesPaths=['docs/src/yellowAlert.webp', 'sur.gif', 'animacion.mp4'],
             needNotification=True
+        )
+    elif percentageG >= 2.5:
+        print("🟢 Green alert!, Sending report")
+        import telegram, message, update
+        update.downloadAdditions()
+        telegram.sendPost(
+            text=message.template('green'),
+            imagesPaths=['docs/src/greenAlert.webp', 'sur.gif', 'animacion.mp4'],
+            needNotification=False
         )
     else:
         print("✔ No report needed")
