@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sobre este proyecto</title>
+
+		<link rel="icon" href="./favicon.png">
+
+		<link rel="stylesheet" href="./dist/reset.css">
+		<link rel="stylesheet" href="./dist/reveal.css">
+		<link rel="stylesheet" href="./dist/floating.css">
+		<link rel="stylesheet" href="./dist/theme/black.css">
+		<link rel="stylesheet" href="./dist/theme/style.css">
+		<link rel="stylesheet" href="./docs/dist/index/suscribe.css">
+	</head>
+	<body>
+		<div class="small">
+			<div class="licence-container">
+				<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/#" target="_blank">
+					<img class="button" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Creative Commons Licence">
+				</a>
+			</div>
+		</div>
+
+		<div class="reveal">
+			<div class="slides">
+				<section
+					data-background-color="#000"
+					id="start"
+				>
+					<h1>Autocontingencias</h1>
+					<p>
+						Leandro Fino<br>
+						Franco Castro<br>
+						Facundo Lattandi
+					</p>
+				</section>
+				
+				<section
+					data-background-color="#000"
+				>
+					<h2>¿Por qué lo creamos?</h2>
+				</section>
+				
+				<section
+					data-background-color="#000"
+				>
+					<h2>¿Qué es?</h2>
+				</section>
+				
+				<section
+					data-background-color="#000"
+					id="alerts"
+				>	
+					<h2>Tipos de alertas</h2>
+					<div id="container">
+						<div id="container-2">
+							<h4>Alerta verde</h4><br>
+							<img src="./src/greenAlert.webp" alt="Alerta verde">
+						</div>
+						<div id="container-2">
+							<h4>Alerta amarilla</h4><br>
+							<img src="./src/yellowAlert.webp" alt="Alerta amarilla">
+						</div>
+						<div id="container-2">
+							<h4>Alerta roja</h4><br>
+							<img src="./src/redAlert.webp" alt="Alerta roja">
+						</div>
+					</div>
+				</section>
+
+				<section
+					data-background-color="#000"
+					id="important"
+				>
+					<h2>A tener en cuenta</h2>
+					<ul>
+						<li>El bot detecta tormentas para todo el oasis sur, puede ser posible que no moleste en su ubicación, y también que por un cambio de vientos, termine siendo un problema.</li>
+						<li>Lo mejor es parender a leer el radar por cuenta propia ya que el algoritmo puede fallar, no todas las alertas significan que precipitará granizo</li>
+					</ul>
+				</section>
+
+				<section
+					data-background-color="#000"
+				>
+					<h2>Unase</h2>
+					<a href="https://t.me/autocontingencias" target="_blank">t.me/autocontingencias</a>
+				</section>
+			</div>
+		</div>
+
+		<script src="./dist/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+
+				controls: true,
+				controlsTutorial: true,
+				preloadIframes: true,
+				progress: false,
+				controlsBackArrows: 'visible',
+				transition: 'convex',
+				transitionSpeed: 'slow',
+				hideCursorTime: 1000,
+
+				plugins: []
+			});
+		</script>
+	</body>
+</html>

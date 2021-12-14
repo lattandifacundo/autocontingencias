@@ -1,0 +1,81 @@
+@import url(./theme/fonts/cascadia-code/cascadia-code.css);
+
+nav{
+    background-color: #C6C59C;
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+}
+
+.big .left .selected{
+    background-color: #CDAD84;
+    padding: 3.5vh 1vw 3.5vh 1vw;
+    margin: 0 !important;
+}
+
+.small .left .selected{
+    background-color: #CDAD84;
+    padding: 2.5vh 1vw 2.5vh 1vw;
+    margin: 0 !important;
+}
+
+nav .nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15vw 0px 15vw;
+}
+
+.nav-container .left, .nav-container .right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.big .left .nav-object{
+    margin: 3.5vh 1vw 3.5vh 1vw;
+}
+
+.small .left .nav-object img{
+    margin: 2.5vh 1vw 2.5vh 1vw;
+}
+
+.nav-object, .nav-object:visited{
+    color: #261C15;
+    text-decoration: none;
+}
+
+.big .left .nav-object{
+    font-family: 'Cascadia Code';
+    font-size: 2.75vh;
+}
+
+.big .left .nav-object:hover{
+    font-size: 3vh;
+    background-color: #C5D86D;
+    padding: 3.5vh .75vw 3.5vh .75vw;
+    margin: 0px .25vw 0px .25vw;
+}
+
+.big .left .nav-object img{
+    width: 0;
+}
+
+.right .nav-object img{
+    width: 7.5vh;
+    padding: 1.25vh;
+}
+
+.small .nav-object{
+    font-size: 0em;
+}
+
+.small .left .nav-object img{
+    width: 5vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.small .left .selected img{
+    width: 5vh;
+    padding: 0 !important;
+    margin: 0 !important;
+}

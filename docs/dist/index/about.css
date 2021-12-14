@@ -1,0 +1,43 @@
+#about{
+    background-color: #C6C59C;
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    font-family: 'Cascadia Code';
+    text-align: center;
+}
+
+.big #about h2{
+    font-size: 2.2em;
+}
+
+.big #about p{
+    margin-top: 2vh;
+    font-size: 1.2em;
+
+    padding: 0 10vw 0 10vw;
+}
+
+.small #about h2{
+    font-size: 1.1em;
+}
+
+.small #about p{
+    margin-top: 2vh;
+    font-size: .75em;
+
+    padding: 0 10vw 0 10vw;
+}
+
+#about p a, #about p a:visited{
+    color: #2222bb;
+}
+
+#about p b{
+    font-weight: bold;
+}
+
+#about p u{
+    text-decoration: underline;
+}

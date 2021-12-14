@@ -1,0 +1,35 @@
+#start p{
+    margin-top: 5vh;
+    font-size: .75em;
+    line-height: 1.5em;
+}
+
+#alerts img{
+    display: inline;
+    width: 14vw;
+    margin: .5vw;
+}
+
+#alerts h4{
+    display: inline;
+    font-size: .5em;
+}
+
+#alerts div #container{
+    display: flex;
+}
+
+#alerts div #container-2{
+    display: inline-block;
+}
+
+#alerts br{
+    display: block;
+}
+
+#important ul li{
+    font-size: .5em;
+    margin: 5vh;
+
+    color: yellow;
+}

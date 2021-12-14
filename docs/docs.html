@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Documentación</title>
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.png">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/nav.css">
+    <link rel="stylesheet" href="dist/floating.css">
+    <link rel="stylesheet" href="dist/docs/style.css">
+    <link rel="stylesheet" href="dist/footer.css">
+</head>
+<body class="big">
+    <nav>
+        <div id="nav-container" class="nav-container text">
+            <div class="right">
+                <a class="nav-object" href="./index.html"><img src="./favicon.png"></a>
+            </div>
+            <div class="left">
+                <a class="nav-object" href="./index.html"><img src="./src/home.svg">Inicio</a>
+                <a class="nav-object selected" href="#"><img src="./src/about.svg">Documentación</a>
+                <a class="nav-object" href="./about.html"><img src="./src/slides.svg">Presentación</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="floating-container" class="floating-container">
+        <div class="licence-container">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/#" target="_blank">
+                <img class="button" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Creative Commons Licence">
+            </a>
+        </div>
+        <div class="join-container">
+            <a href="https://t.me/autocontingencias" target="_blank">
+                <img class="button" src="/docs/src/suscribe.svg" alt="Suscribe on telegram">
+            </a>
+        </div>
+    </div>
+
+    <section id="info">
+        <h2>¿Sencillamente, cómo funciona el radar?</h2>
+        <p>El radar emite un sonido, y está configurado de tal forma que pinta dependiendo de la altura que detecte que hay una nube. Básicamente y resumiendo mucho, si una nube está más alta, más frio hace, lo que indica que hay más probabilidades de que se esté formando hielo.</p>
+        <h2>¿Cómo leer el radar?</h2>
+        <p>Primero, debemos identificar donde nos encontramos (no hace falta que sea exacto), con leer el nombre de nuestro departamento basta.</p>
+        <p>Luego a la derecha de la imagen se podrá observar la referencia, estos colores indican la altura de la nube.</p>
+        <img src="./src/reference.png" alt="Referencia explicada">
+        <p id="list">
+            <br>● Los tres primeros colores, indican probabilidades de lluvia.
+            <br>● Los cinco que le siguen indican precipitaciones de lluvia de diferentes magnitudes.
+            <br>● Los siguientes cuatro indican formaciones de granizo.
+            <br>● Los cuatro de más arriba indican precipitaciones de granizo.
+        </p>
+        <h3><span id="important">⚠ Importante ⚠</span><br>El bot notifica cuando detecta granizo, sin identificar donde, puede enviar una alerta y referirse a otra parte del mapa que no sea su departamento y no le afecte. Como también puede ocurrir que el viento cambie y termine precipitando cerca suyo.</h3>
+        <h3><span id="important">⚠ Importante ⚠</span><br>Cuando el bot notifica cuando detecta granizo, simplemente significa que hay granizo en las nubes, pero no quiere, necesariamente, decir que va a precipitar.</h3>
+    </section>
+
+    <footer>
+        <h3><b>Autores</b></h3>
+        <p>
+            <br>
+
+            <span>
+                <a href="https://api.whatsapp.com/send?phone=5492625438087" target="_blank">Fino, Leandro<img src="./src/externalLink.svg" alt="External link"></a><br>
+            </span>
+
+            <span>
+                <a href="https://api.whatsapp.com/send?phone=5492625670992" target="_blank">Castro, Franco<img src="./src/externalLink.svg" alt="External link"></a><br>
+            </span>
+
+            <span>
+                <a href="https://github.com/LattandiFacundo" target="_blank">Lattandi, Facundo<img src="./src/externalLink.svg" alt="External link"></a><br>
+            </span>
+        </p>
+    </footer>
+
+    <script src="js/fixSize.js"></script>
+</body>
+</html>

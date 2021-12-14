@@ -1,0 +1,69 @@
+body{
+    background-color: #454550;
+}
+
+section{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.big #header{
+    padding-bottom: calc(25vh - 3em);
+}
+
+.small #header{
+    padding-bottom: 23vh;
+}
+
+header img{
+    width: 100vw;
+    height: 50vh;
+    left: 0;
+    top: 10vh;
+    z-index: -1;
+
+    position: absolute;
+}
+
+.big #painting{
+    width: 80vw;
+    height: 40vh;
+    left: 10vw;
+    top: 15vh;
+    z-index: -1;
+
+    position: absolute;
+}
+
+.small #painting{
+    width: 95vw;
+    height: 30vh;
+    left: 2.5vw;
+    top: 19.5vh;
+    z-index: -1;
+
+    position: absolute;
+}
+
+.big header h1{
+    text-align: center;
+    font-family: 'Cascadia Code';
+    font-weight: bolder;
+    
+    z-index: 1;
+    font-size: 4em;
+
+    margin-top: calc(25vh - .5em);
+
+    /* text-shadow: 1px 1px 2px #454550, -.5px .5px 10px blue; */
+}
+
+.small header h1{
+    text-align: center;
+    font-family: 'Cascadia Code';
+    font-weight: bolder;
+    
+    z-index: 1;
+    font-size: 1.5em;
+
+    margin-top: calc(25vh - .75em);
+}

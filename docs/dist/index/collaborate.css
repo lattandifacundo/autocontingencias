@@ -1,0 +1,61 @@
+#collaborate{
+    padding: 10vh 0 5vh 0;
+
+    font-family: 'Cascadia Code';
+    text-align: center;
+
+    background-color: #D05847;
+}
+
+.big #collaborate h2{
+    font-size: 2.2em;
+}
+
+.small #collaborate h2{
+    font-size: 1.1em;
+}
+
+#collaborate .container{
+    display: block;
+    margin: 5vh;
+}
+
+#collaborate .button-container{
+    display: inline-block;
+}
+
+.big #collaborate a{
+    font-size: 1.5em;
+    text-decoration: none;
+
+    transition: .5s;
+
+    background-color: #111;
+    padding: 2.5vh;
+}
+
+.small #collaborate a{
+    font-size: .75em;
+    text-decoration: none;
+
+    background-color: #111;
+    padding: 2.5vh;
+}
+
+#collaborate a:hover{
+    background-color: black;
+}
+
+#collaborate .button span{
+    vertical-align:middle;
+    
+    color: #eee;
+
+    text-decoration: none;
+}
+
+#collaborate img{
+    vertical-align:middle;
+    width: 1.5em;
+    margin: 0 1vw 0 .5vw;
+}

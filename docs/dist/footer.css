@@ -1,0 +1,34 @@
+footer{
+    padding: 15vh 0 10vh 0;
+
+    background-color: #674457;
+
+    font-family: 'Cascadia Code';
+    text-align: center;
+}
+
+footer h3{
+    font-size: 2.5em;
+}
+
+footer p{
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+footer p a, footer p a:visited{
+    color: #0496FF;
+}
+
+footer p span{
+    display: inline;
+}
+
+footer img{
+    vertical-align:middle;
+    width: 1.5em;
+}
+
+footer b{
+    font-weight: bold;
+}

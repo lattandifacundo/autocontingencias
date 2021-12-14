@@ -1,5 +1,7 @@
-/.vscode
 __pycache__
+/.vscode
+/debug
+.env
+schedule.py
 sur.gif
 sur.png
-.env

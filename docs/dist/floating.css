@@ -1,0 +1,38 @@
+.licence-container, .join-container{
+    position: fixed;
+    z-index: 999;
+    transition: all 1s ease-out;
+}
+
+.big .licence-container{
+    bottom: 30px;
+    left: 45px;
+    transform: scale(1.2);
+}
+
+.big .join-container{
+    bottom: 30px;
+    right: 47.5px;
+    transform: scale(1.2);
+}
+
+.small .licence-container{
+    bottom: 15px;
+    left: 15px;
+    transform: scale(1);
+}
+
+.small .join-container{
+    bottom: 15px;
+    right: 15px;
+    transform: scale(1);
+}
+
+.big .join-container:hover, .big .licence-container:hover{
+    transform: scale(1.30);
+    transition: all 1s ease-out;
+}
+
+.join-container .button, .licence-container .button{
+    box-shadow: rgba(25, 25, 25, 0.75) 0px 0px 30px;
+}

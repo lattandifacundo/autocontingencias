@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocontingencias</title>
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.png">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/nav.css">
+    <link rel="stylesheet" href="dist/floating.css">
+    <link rel="stylesheet" href="dist/footer.css">
+    <link rel="stylesheet" href="dist/index/header.css">
+    <link rel="stylesheet" href="dist/index/about.css">
+    <link rel="stylesheet" href="dist/index/suscribe.css">
+    <link rel="stylesheet" href="dist/index/collaborate.css">
+    <link rel="stylesheet" href="dist/index/docs.css">
+</head>
+<body class="big">
+    <div id="floating-container" class="floating-container">
+        <div class="licence-container">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/#" target="_blank">
+                <img class="button" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Creative Commons Licence">
+            </a>
+        </div>
+        <div class="join-container">
+            <a href="https://t.me/autocontingencias" target="_blank">
+                <img class="button" src="/docs/src/suscribe.svg" alt="Suscribe on telegram">
+            </a>
+        </div>
+    </div> 
+
+    <nav>
+        <div id="nav-container" class="nav-container text">
+            <div class="right">
+                <a class="nav-object" href="#"><img src="./favicon.png"></a>
+            </div>
+            <div class="left">
+                <a class="nav-object selected" href="#"><img src="./src/home.svg">Inicio</a>
+                <a class="nav-object" href="./docs.html"><img src="./src/about.svg">Documentación</a>
+                <a class="nav-object" href="./about.html"><img src="./src/slides.svg">Presentación</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header">
+        <h1>Autocontingencias</h1>
+        <img src="src/mainBackground.jpg" alt="Nubes">
+        <img id="painting" src="src/painting.png" alt="">
+    </header>
+
+    <section id="about">
+        <h2>¿De qué trata el proyecto?</h2>
+        <p>Nuestro proyecto consiste en alertar <u>automáticamente</u>, mediante un mensaje, en un canal de Telegram <u>gratuito</u>, a la población de General Alvear, San Rafael y parte de Malargue sobre posibles <b>precipitaciones de granizo.</b><br><br>
+           El script leerá el <a href="https://www.mendoza.gov.ar/contingencias/radar/" target="_blank">radar de contingencias climáticas</a> y si detecta formaciones de hielo, emitirá un mensaje con una captura del mapa y un video de las últimas imágenes secuenciadas, para que la gente pueda prepararse.</p>
+    </section>
+
+    <section id="suscribe">
+        <h2>¿Quiere recibir alertas?</h2>
+
+        <div class="container">            
+            <div class="button-container">
+                <a class="button" href="https://t.me/autocontingencias" target="_blank">
+                    <img src="./src/telegram.svg" alt="Autocontingencias Telegram"><span>Unete a nuesto canal</span><img src="./src/externalLink.svg" alt="External link">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="docs">
+        <h2>¿No sabe cómo leer el radar?</h2>
+
+        <div class="container">            
+            <div class="button-container">
+                <a class="button" href="./docs.html" target="_blank">
+                    <img src="./favicon.png" alt="Autocontingencias Mark"><span>Aprenda aquí</span><img src="./src/externalLink.svg" alt="External link">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="collaborate">
+        <h2>¿Encontro algún error?</h2>
+
+        <div class="container">            
+            <div class="button-container">
+                <a class="button" href="https://github.com/LattandiFacundo/autocontingencias/issues/new" target="_blank">
+                    <img src="./src/github.png" alt="Github Mark"><span>Reportelo</span><img src="./src/externalLink.svg" alt="External link">
+                </a>
+            </div>
+        </div>
+
+        <h2>¿Sabe cómo mejorar el proyecto?</h2>
+        
+        <div class="container">            
+            <div class="button-container">
+                <a class="button" href="https://github.com/LattandiFacundo/autocontingencias/pulls" target="_blank">
+                    <img src="./src/github.png" alt="Github Mark"><span>Haga una pull request</span><img src="./src/externalLink.svg" alt="External link">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3><b>Autores</b></h3>
+        <p>
+            <br>
+
+            <span>
+                <a href="https://api.whatsapp.com/send?phone=5492625438087" target="_blank">Fino, Leandro<img src="./src/externalLink.svg" alt="External link"></a><br>
+            </span>
+
+            <span>
+                <a href="https://api.whatsapp.com/send?phone=5492625670992" target="_blank">Castro, Franco<img src="./src/externalLink.svg" alt="External link"></a><br>
+            </span>
+
+            <span>
+                <a href="https://github.com/LattandiFacundo" target="_blank">Lattandi, Facundo<img src="./src/externalLink.svg" alt="External link"></a><br>
+            </span>
+        </p>
+    </footer>
+
+    <script src="js/fixSize.js"></script>
+</body>
+</html>

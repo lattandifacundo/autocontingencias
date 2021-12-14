@@ -1,0 +1,61 @@
+#suscribe{
+    padding: 10vh 0 5vh 0;
+
+    font-family: 'Cascadia Code';
+    text-align: center;
+
+    background-color: #C6C59C;
+}
+
+.big #suscribe h2{
+    font-size: 2.2em;
+}
+
+.small #suscribe h2{
+    font-size: 1.1em;
+}
+
+#suscribe .container{
+    display: block;
+    margin: 5vh;
+}
+
+#suscribe .button-container{
+    display: inline-block;
+}
+
+.big #suscribe a{
+    font-size: 1.5em;
+    text-decoration: none;
+
+    transition: .5s;
+
+    background-color: #136790;
+    padding: 2.5vh;
+}
+
+.small #suscribe a{
+    font-size: .75em;
+    text-decoration: none;
+
+    background-color: #136790;
+    padding: 2.5vh;
+}
+
+#suscribe a:hover{
+    background-color: #105070;
+}
+
+#suscribe .button span{
+    vertical-align:middle;
+    
+    color: #eee;
+
+    text-decoration: none;
+}
+
+#suscribe img{
+    vertical-align:middle;
+    width: 1.5em;
+    margin: 0 1vw 0 .5vw;
+}

@@ -1,0 +1,75 @@
+.big #info{
+    padding: 10vh 12.5vw 5vh 12.5vw;
+}
+
+.small #info{
+    padding: 10vh 5vw 5vh 5vw;
+}
+
+#info{
+    font-family: 'Cascadia Code';
+    text-align: center;
+
+    background-color: #C6C59C;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.big #info h2{
+    font-size: 2.2em;
+    line-height: 3em;
+}
+
+.small #info h2{
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+.big #info h3{
+    font-size: 1.5em;
+    background-color: red;
+
+    margin-top: 2vh;
+}
+
+.small #info h3{
+    font-size: .95em;
+
+    background-color: red;
+
+    margin-top: 2vh;
+}
+
+.big #info h3 #important{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.small #info h3 #important{
+    font-size: .95em;
+    text-decoration: underline;
+}
+
+.big #info img{
+    width: 20vw;
+    margin: 5vh 1vw;
+}
+
+.small #info img{
+    width: 50vw;
+    margin: 5vh 1vw;
+}
+
+.big #info p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.small #info p{
+    font-size: .75em;
+    line-height: 1.25em;
+}
+
+#list{
+    text-align: left;
+}
