@@ -1,5 +1,5 @@
 import telebot, os, decouple
-from telebot.types import InputMediaAnimation, InputMediaPhoto, InputMediaVideo
+from telebot.types import InputMediaPhoto, InputMediaVideo
 
 TOKEN = decouple.config('TOKEN')
 CHANNEL_ID = decouple.config('CHANNEL_ID')
