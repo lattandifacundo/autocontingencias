@@ -3,5 +3,5 @@
 
 SUP_TOTAL = 451184
 
-def percentage(actual):
+def percentage(actual): # actual [=] px
     return (actual*100)/SUP_TOTAL

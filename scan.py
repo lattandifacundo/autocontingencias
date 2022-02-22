@@ -8,7 +8,7 @@ def scan(imagePath):
 
     imgW, imgH = img.size
 
-    countG = 0
+    countG = 0 # Count "granizo" pixels
     for i in range(imgW):
         for j in range(imgH):
             v = scale.compute(pixels[i, j])
