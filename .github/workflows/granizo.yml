@@ -5,8 +5,8 @@ on:
     branches:
       - main
       
-  schedule:
-    - cron: '00,15,30,45 * * * *'
+  # schedule:
+    # - cron: '00,15,30,45 * * * *'
 
 jobs:
   granizo:
